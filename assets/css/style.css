@@ -14,8 +14,8 @@ body {
 }
 
 .navBar {
-    overflow: hidden;
     background-color: #5E6B6A;
+    overflow: visible;
 }
 
 .navBar a {
@@ -29,7 +29,7 @@ body {
 
 .dropdown {
     float: left;
-    overflow: visible;
+    overflow: relative;
 }
 
 .dropdown .dropbtn {
@@ -41,6 +41,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    cursor: pointer;
 }
 
 .navBar a:hover, .dropdown:hover .dropbtn {
@@ -50,18 +51,20 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
 }
 
 .dropdown-content a {
     float: none;
+    display: block;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
     text-align: left;
 }
 
