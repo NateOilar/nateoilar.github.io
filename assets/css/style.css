@@ -16,7 +16,12 @@ body {
 .navBar {
     background-color: #5E6B6A;
     overflow: visible;
-    display: flow-root;
+}
+
+.navBar::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .navBar a {
