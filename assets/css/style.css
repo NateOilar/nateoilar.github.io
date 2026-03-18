@@ -11,7 +11,6 @@ p {
 /** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar **/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #3b3b3b;
 }
 
 .navBar {
@@ -19,18 +18,10 @@ body {
     overflow: visible;
 }
 
-/* ___________________________________________________________________________ */
-/* Why this works:
-your links and dropdown are floated
-floated children do not automatically give the parent height
-flow-root or a clearfix makes .navBar expand again
-that restores the green background */
-.navBar::after {
-    content: "";
-    display: block;
-    clear: both;
+html, body {
+    background-color: #3b3b3b;
 }
-/* _________________________________________________________________________ */
+
 .navBar a {
     float: left;
     font-size: 16px;
@@ -128,3 +119,16 @@ that restores the green background */
 {
     color: lightgrey;
 }
+
+/* ___________________________________________________________________________ */
+/* Why this works:
+your links and dropdown are floated
+floated children do not automatically give the parent height
+flow-root or a clearfix makes .navBar expand again
+that restores the green background */
+.navBar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* _________________________________________________________________________ */
