@@ -18,9 +18,6 @@ body {
     overflow: visible;
 }
 
-html, body {
-    background-color: #3b3b3b;
-}
 
 .navBar a {
     float: left;
