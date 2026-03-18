@@ -17,6 +17,7 @@ body {
     background-color: #5E6B6A;
     overflow: visible;
 }
+
 /* ___________________________________________________________________________ */
 /* Why this works:
 your links and dropdown are floated
@@ -32,6 +33,14 @@ that restores the green background */
 .navBar a {
     float: left;
     font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar p {
+    font-size: 32px;
     color: white;
     text-align: center;
     padding: 14px 16px;
