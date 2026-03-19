@@ -38,7 +38,7 @@ body {
 
 .dropdown {
     float: left;
-    overflow: relative;
+    position: relative;
 }
 
 .dropdown .dropbtn {
@@ -94,7 +94,7 @@ body {
 
 #content {
     background-color: #ffffff;
-    margin: 15px 20%;
+    margin: 15px 5%;
 }
 
 #footer{
