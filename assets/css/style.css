@@ -32,7 +32,8 @@ body {
     font-size: 64px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
 }
 
